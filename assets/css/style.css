@@ -1,0 +1,88 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bl-dark: #1a1a1a;
+    --bl-nav: #ff6900;
+    --bl-sustainability: #008000;
+    --bl-discount: #ff0000;
+}
+
+body {
+    font-family: 'Helvetica Now', Helvetica, Arial, sans-serif;
+}
+/* #endregion Common */
+
+/* #region Utilities */
+.container {
+    width: 70%;
+}
+.d-flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jc-cent {
+    justify-content: center;
+}
+
+.ai-cent {
+    align-items: center;
+}
+/* #endregion Utilities */
+
+/* #region Debug */
+
+/* #endregion Debug */
+
+/* #region Header */
+#app_header {
+    position: sticky;
+}
+nav {
+    color: white;
+    background-color: var(--bl-nav);
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.categories {
+    width: 16%;
+}
+
+.categories a, .actions a {
+    color: white;
+    font-weight: 600;
+    padding: 0 0.2rem;
+}
+
+.logo {
+    width: 68%;
+    text-align: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.actions {
+    width: 16%;
+    text-align: end;
+}
+/* #endregion Header */
+
+/* #region Main */
+
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Main */
