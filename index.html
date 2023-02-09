@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="debug">
+<body>
     <header id="app_header">
         <nav class="d-flex jc-cent">
             <div class="container d-flex ai-cent">
@@ -39,20 +39,117 @@
 
     <main id="app_main">
         <div class="container">
-            <div class="row">
-                <div class="card">
-                    <div class="fav"></div>
-                    <img src="" alt="">
-                    <div class="info">
-                        <div class="discount"></div>
-                        ›<div class="sustainable"></div>
+            <div class="row d-flex jc-cent">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/1.webp" alt="">
+                        <img class="hover" src="./assets/img/1b.webp">
+                        <div class="badge discount">-50%</div>
+                        <div class="badge sustainable">Sostenibilità</div>
+                        <div class="features">
+                            <span class="brand">Levi's</span><br>
+                            <span class="type">RELAXED FIT TEE UNISEX</span><br>
+                            <span class="disc-price">14,99&euro;</span>
+                            <span class="price">  29,99&euro;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/2.webp" alt="">
+                        <img class="hover" src="./assets/img/2b.webp" alt="">
+                        <div class="badge discount">-30%</div>
+                        <div class="features">
+                            <span class="brand">Guess</span><br>
+                            <span class="type">ROSE TEE</span><br>
+                            <span class="disc-price">20,99&euro;</span>
+                            <span class="price">29,99&euro;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/3.webp" alt="">
+                        <img class="hover" src="./assets/img/3b.webp">
+                        <div class="badge discount">-30%</div>
+                        <div class="features">
+                            <span class="brand">Come Zucchero Filato</span><br>
+                            <span class="type">VOGLIA DI COLORI PASTELLO</span><br>
+                            <span class="disc-price">129,99&euro;</span>
+                            <span class="price">  184,99&euro;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/4.webp" alt="">
+                        <img class="hover" src="./assets/img/4b.webp" alt="">
+                        <div class="badge discount">-30%</div>
+                        <div class="badge sustainable">Sostenibilità</div>
+                        <div class="features">
+                            <span class="brand">Levi's</span><br>
+                            <span class="type">TEE UNISEX</span><br>
+                            <span class="disc-price">14,99&euro;</span>
+                            <span class="price">  29,99&euro;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/5.webp" alt="">
+                        <img class="hover" src="./assets/img/5b.webp">
+                        <div class="features">
+                            <span class="brand">Maya Deluxe</span><br>
+                            <span class="type">STRIPE BODICE</span><br>
+                            <span class="disc-price">99,99&euro;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="last" class="card">
+                        <div class="fav">&hearts;</div>
+                        <img class="show" src="./assets/img/6.webp" alt="">
+                        <img class="hover" src="./assets/img/6b.webp" alt="">
+                        <div class="badge sustainable">Sostenibilità</div>
+                        <div class="features">
+                            <span class="brand">Guess</span><br>
+                            <span class="type">ROSE TEE</span><br>
+                            <span class="disc-price">29,99&euro;</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- /#app_main -->
-    <footer id="app_footer"></footer>
+    
+    <footer id="app_footer">
+        <div class="container d-flex">
+            <div class="company">
+                <span id="boolando">Boolando s.r.l</span>
+                <ul class="d-flex">
+                    <li><a href="#">Informazioni legali</a></li>
+                    <li><a href="#">Informativa sulla privacy</a></li>
+                    <li><a href="#">Diritto di recesso</a></li>
+                </ul>
+            </div>
+            <div class="social d-flex">
+                <span class="find">Trovaci anche su</span><br>
+                <span id="social-icons">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </span>
+            </div>
+        </div>
+    </footer>
     <!-- /#app_footer -->
 </body>
 </html>

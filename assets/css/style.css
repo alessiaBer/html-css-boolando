@@ -20,6 +20,7 @@ body {
 /* #region Utilities */
 .container {
     width: 70%;
+    margin: 0 auto;
 }
 .d-flex {
     display: flex;
@@ -27,6 +28,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 .jc-cent {
@@ -38,20 +43,19 @@ a {
 }
 /* #endregion Utilities */
 
-/* #region Debug */
-
-/* #endregion Debug */
 
 /* #region Header */
-#app_header {
-    position: sticky;
-}
+
 nav {
+    width: 100%;
+    margin-top: -5rem;
     color: white;
     background-color: var(--bl-nav);
     justify-content: space-between;
     font-size: 0.8rem;
     padding: 0.5rem 0;
+    position: fixed;
+    z-index: 2;
 }
 
 .categories {
@@ -80,9 +84,141 @@ nav {
 /* #endregion Header */
 
 /* #region Main */
+#app_main {
+    margin-bottom: 3rem;
+}
+.row {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.card {
+    padding: 0.5rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.card img {
+    max-width: 100%;
+   
+}
+
+.fav {
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 1rem 0.5rem 0.7rem;
+    top: 2.5rem;
+    right: 0;
+}
+
+.badge {
+    color: white;
+    font-weight: 600;
+    font-size: 0.7rem;
+    position: absolute;
+    padding: 0.3rem;
+    bottom: 10%;
+}
+
+.discount {
+    background-color: var(--bl-discount);
+    left: 0.5rem;
+
+}
+.sustainable {
+    background-color: var(--bl-sustainability);
+    left: 3rem;
+}
+
+.features {
+    position: absolute;
+    top: 100%;
+    left: 2%;
+}
+
+.brand {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.type {
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.disc-price {
+    font-weight: 600;
+    color: var(--bl-discount);
+    font-size: 0.8rem;
+}
+
+.price {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+#last .sustainable {
+    left: 0.5rem;
+}
+
+/* hover */
+img.hover {
+    display: none;
+}
+
+.col-4:hover .hover {
+    display: inline-block;
+}
+
+.col-4:hover .show {
+    display: none;
+}
+
+/* /hover */
 
 /* #endregion Main */
 
 /* #region Footer */
+#app_footer {
+    background-color: var(--bl-dark);
+    color: white;
+}
 
-/* #endregion Main */
+#app_footer .container {
+    justify-content: space-between;
+    padding: 1.3rem 0;
+    align-items: center;
+}
+#boolando {
+    font-weight: 600;
+}
+
+.find {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 0.4rem;
+}
+
+.social {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#social-icons i {
+    padding: 0 0.3rem;
+    font-size: 1.2rem;
+}
+
+.company a {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+}
+/* #endregion Footer */
